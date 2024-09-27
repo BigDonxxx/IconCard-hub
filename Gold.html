@@ -2,26 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gold Level: Backstage Pass</title>
+    <title>Gold Level - Superfan</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f7f7f7;
+            background-color: #fafafa;
             color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
+
         h1 {
             text-align: center;
-            color: #f1c40f;
+            color: #d4af37; /* Gold color */
             font-size: 48px;
             margin-top: 40px;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
+
+        h2 {
+            color: #d4af37; /* Gold color */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .gold-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
         .section {
             background-color: white;
             padding: 40px;
@@ -29,28 +56,54 @@
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
-        .signup-button {
+
+        .join-btn {
             display: inline-block;
-            background-color: #f1c40f;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
-        .signup-button:hover {
-            background-color: #d4a106;
-        }
-        p {
+            padding: 15px 40px;
             font-size: 18px;
-            line-height: 1.8;
+            color: #fff;
+            background: linear-gradient(135deg, #d4af37 0%, #b38828 100%);
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
         }
+
+        .join-btn:hover {
+            background: linear-gradient(135deg, #b38828 0%, #8b6a1a 100%);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .join-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.75s;
+            transform: translate(-50%, -50%) rotate(45deg);
+            opacity: 0;
+        }
+
+        .join-btn:hover::before {
+            opacity: 1;
+            width: 0%;
+            height: 0%;
+        }
+
         ul {
             list-style: none;
             padding: 0;
         }
+
         li {
             margin-bottom: 10px;
             font-size: 18px;
@@ -58,20 +111,22 @@
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>Gold Level: Backstage Pass</h1>
+        <h1>Gold Level: Superfan</h1>
         <div class="section">
-            <p>Welcome to the ultimate backstage experience. With Gold Level membership, you're part of an elite club where personalized celebrity interactions await.</p>
+            <p>Welcome to the Gold Level of IconCard Hub International! Enjoy even more perks and exclusive content.</p>
             <ul>
-                <li><strong>Personalized Video Message:</strong> Custom greetings from your favorite star.</li>
-                <li><strong>Virtual Meet-and-Greets:</strong> One-on-one online celebrity chats.</li>
-                <li><strong>Signed Physical Fan Card:</strong> Limited edition memorabilia.</li>
-                <li><strong>15% Discount:</strong> Special rates on merchandise.</li>
+                <li><strong>Exclusive Content:</strong> Weekly behind-the-scenes footage and interviews.</li>
+                <li><strong>Personalized Autograph:</strong> Signed digital autographs and video messages.</li>
+                <li><strong>Monthly Newsletter:</strong> Insider news and event VIP access.</li>
+                <li><strong>15% Discount:</strong> Save on celebrity merchandise and special events.</li>
             </ul>
-            <a href="signup.html" class="signup-button">Join the Backstage Club</a>
+            <img src="gold-image.jpg" alt="Gold Membership" class="gold-image">
+            <h2>Join the Gold Level</h2>
+            <p>Join the Gold Level Superfan community for VIP experiences and special access!</p>
+
+            <a href="mailto:iconcardhubinternationalteam@gmail.com?subject=Join%20the%20Gold%20Level&body=Hello%20IconCardHub%20Team,%0D%0A%0D%0AI%20am%20interested%20in%20joining%20the%20Gold%20Level.%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]" class="join-btn">Join the Gold Level</a>
         </div>
     </div>
-
 </body>
 </html>
