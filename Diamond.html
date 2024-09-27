@@ -2,67 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diamond Level: Ultimate Experience</title>
+    <title>Diamond Level - Superfan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fafafa;
+            color: #333;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #f4f4f4;
         }
+
+        h1 {
+            text-align: center;
+            color: #b9f2ff; /* Diamond color */
+            font-size: 48px;
+            margin-top: 40px;
+        }
+
         .container {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            width: 80%;
-            max-width: 900px;
             text-align: center;
         }
-        h1 {
-            color: #4a4a4a;
-        }
+
         h2 {
-            color: #ffcc00;
+            color: #b9f2ff; /* Diamond color */
+            font-size: 36px;
+            margin-bottom: 20px;
         }
+
         p {
-            color: #666;
             font-size: 18px;
-            line-height: 1.6;
+            color: #333;
         }
-        .cta {
-            margin-top: 20px;
+
+        .diamond-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
         }
-        .cta button {
-            background-color: #ffcc00;
+
+        .section {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .join-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 18px;
             color: #fff;
-            padding: 15px 30px;
+            background: linear-gradient(135deg, #b9f2ff 0%, #86c8dc 100%);
             border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
         }
-        .cta button:hover {
-            background-color: #e6b800;
+
+        .join-btn:hover {
+            background: linear-gradient(135deg, #86c8dc 0%, #67a1b3 100%);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .join-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.75s;
+            transform: translate(-50%, -50%) rotate(45deg);
+            opacity: 0;
+        }
+
+        .join-btn:hover::before {
+            opacity: 1;
+            width: 0%;
+            height: 0%;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Diamond Level</h1>
-        <h2>The Ultimate Experience</h2>
-        <p>You've reached the highest level of IconCard Hub International—the <strong>Diamond Level</strong>—where every aspect of the fan experience is customized just for you. This isn’t just a membership; it’s an <strong>exclusive journey</strong> that brings you closer to your favorite celebrities in ways you’ve only dreamed of.</p>
-        <p>As a Diamond member, you’ll enjoy all the perks of the previous levels, but with even more personalized experiences. One of the highlights of Diamond membership is the <strong>private lunch or dinner</strong> with a celebrity. Whether virtual or in-person, this is a once-in-a-lifetime opportunity to sit down with a star for a private conversation. Imagine discussing your favorite films, asking about their creative process, or just enjoying a casual chat over a meal. This is a fan experience like no other, crafted to be intimate and memorable.</p>
-        <p>The Diamond Level comes with <strong>lifetime benefits</strong>, ensuring that you’ll have access to all future events and exclusive opportunities, no matter when or where they take place. This is the ultimate guarantee that your fan experience will never end.</p>
-        <p>We also offer <strong>customized fan experience packages</strong> tailored specifically to you. Whether it’s attending a red carpet event, receiving rare signed memorabilia, or getting backstage access, we will work with you to create a package that matches your personal preferences and passion.</p>
-        <p>With <strong>guaranteed priority access</strong> to all events and <strong>exclusive merchandise</strong> not available to any other membership level, you’ll always be ahead of the curve when it comes to celebrity engagement.</p>
-        <div class="cta">
-            <button onclick="window.location.href='signup.html'">Sign Up Now</button>
+        <h1>Diamond Level: Superfan</h1>
+        <div class="section">
+            <p>Welcome to the elite Diamond Level of IconCard Hub International! Access the most exclusive celebrity perks.</p>
+            <ul>
+                <li><strong>Exclusive Content:</strong> Daily behind-the-scenes content and special events.</li>
+                <li><strong>Personalized Autograph:</strong> Signed digital autographs, video messages, and live streams.</li>
+                <li><strong>VIP Event Access:</strong> Invitations to celebrity events and live shows.</li>
+                <li><strong>20% Discount:</strong> Save on all merchandise, events, and VIP experiences.</li>
+            </ul>
+            <img src="diamond-image.jpg" alt="Diamond Membership" class="diamond-image">
+            <h2>Join the Diamond Level</h2>
+            <p>Become a Diamond Level Superfan and get unparalleled access to your favorite celebrities.</p>
+
+            <a href="mailto:iconcardhubinternationalteam@gmail.com?subject=Join%20the%20Diamond%20Level&body=Hello%20IconCardHub%20Team,%0D%0A%0D%0AI%20am%20interested%20in%20joining%20the%20Diamond%20Level.%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]" class="join-btn">Join the Diamond Level</a>
         </div>
     </div>
 </body>
