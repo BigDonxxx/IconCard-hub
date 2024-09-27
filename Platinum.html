@@ -1,19 +1,23 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platinum Level: Red Carpet Treatment</title>
+    <title>Platinum Level - Red Carpet Treatment</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Styling for the Platinum Level Section */
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f7f7f7;
+            background-color: #f9f9f9;
             color: #333;
+            margin: 0;
+            padding: 0;
         }
+
         h1 {
             text-align: center;
-            color: #e74c3c;
+            color: #e5e4e2; /* Platinum color */
             font-size: 48px;
             margin-top: 40px;
         }
@@ -21,7 +25,28 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
+
+        h2 {
+            color: #e5e4e2; /* Platinum color */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .platinum-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
         .section {
             background-color: white;
             padding: 40px;
@@ -29,28 +54,36 @@
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
-        .signup-button {
+
+        /* Button Styling */
+        .join-btn {
             display: inline-block;
-            background-color: #e74c3c;
-            color: white;
-            padding: 12px 25px;
+            padding: 12px 30px;
+            color: #fff;
+            background-color: #b3b2b1; /* Platinum color */
             text-decoration: none;
             border-radius: 5px;
+            font-size: 18px;
             font-weight: bold;
             margin-top: 20px;
             transition: background-color 0.3s ease;
         }
-        .signup-button:hover {
-            background-color: #c0392b;
+
+        .join-btn:hover {
+            background-color: #989898; /* Darker platinum */
         }
+
         p {
             font-size: 18px;
             line-height: 1.8;
+            margin-bottom: 20px;
         }
+
         ul {
             list-style: none;
             padding: 0;
         }
+
         li {
             margin-bottom: 10px;
             font-size: 18px;
@@ -58,20 +91,28 @@
     </style>
 </head>
 <body>
+    <!-- Platinum Level Membership Section -->
 
     <div class="container">
+        <h2>Join the Platinum Level</h2>
+        <p>Step onto the red carpet with the Platinum Level and enjoy exclusive VIP benefits like one-on-one video calls, personalized memorabilia, and much more!</p>
+        
+        <!-- Platinum Level Image -->
+        <img src="platinum-image.jpg" alt="Platinum Membership" class="platinum-image">
         <h1>Platinum Level: Red Carpet Treatment</h1>
         <div class="section">
-            <p>Step into the world of red carpet events with Platinum membership! This is where true celebrity experiences unfold, designed exclusively for you.</p>
+            <p>Welcome to the Platinum Level of IconCard Hub International! You're about to experience the ultimate fan engagement with personal, one-on-one interactions with your favorite celebrities.</p>
             <ul>
-                <li><strong>One-on-One Video Call:</strong> Private virtual meetings with celebrities.</li>
-                <li><strong>Signed Script or Lyrics:</strong> Exclusive memorabilia for Platinum members.</li>
-                <li><strong>VIP Event Passes:</strong> Attend special events as a Platinum guest.</li>
-                <li><strong>20% Discount:</strong> Enjoy unbeatable prices on merchandise.</li>
+                <li><strong>One-on-One Video Call:</strong> A personal video chat with a celebrity.</li>
+                <li><strong>Signed Script or Lyrics:</strong> Personalized memorabilia from a star.</li>
+                <li><strong>Website Recognition:</strong> Your name on the celebrity's official website as a Platinum supporter.</li>
+                <li><strong>VIP Event Access:</strong> Get passes to exclusive red carpet events.</li>
+                <li><strong>20% Merchandise Discount:</strong> Enjoy significant savings on celebrity merchandise.</li>
             </ul>
-            <a href="signup.html" class="signup-button">Get Red Carpet Treatment</a>
+
+            <!-- Join the Platinum Level Button (Email Form) -->
+            <a href="mailto:iconcardhubinternationalteam@gmail.com?subject=Join%20the%20Platinum%20Level&body=Hello%20IconCardHub%20Team,%0D%0A%0D%0AI%20am%20interested%20in%20joining%20the%20Platinum%20Level.%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]" class="join-btn">Join the Platinum Level</a>
         </div>
     </div>
-
 </body>
 </html>
