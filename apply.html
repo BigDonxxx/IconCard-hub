@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request access · IconCard Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@360;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="index.html"><span class="mark">I</span> IconCard Hub</a>
+      <button class="menu-btn" type="button" aria-label="Open menu">Menu</button>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="membership.html">Membership</a>
+        <a href="card.html">The card</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="impact.html">Impact</a>
+        <a class="btn" href="apply.html">Request access</a>
+      </nav>
+    </header>
+    <section class="section">
+      <div class="grid-2">
+        <div>
+          <p class="kicker">Application</p>
+          <h1>Request a tier.</h1>
+          <p class="lede">This opens an email to the IconCard team. It does not take payment. A coordinator confirms the live roster before anyone is asked to pay.</p>
+          <p class="muted">iconcardhubinternationalteam@gmail.com</p>
+        </div>
+        <form id="apply" class="panel">
+          <div><label for="name">Name</label><input id="name" name="name" required></div>
+          <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+          <div><label for="city">City</label><input id="city" name="city" placeholder="Port Harcourt"></div>
+          <div>
+            <label for="tier">Tier</label>
+            <select id="tier" name="tier">
+              <option value="bronze">Bronze · $700</option>
+              <option value="silver">Silver · $1,000</option>
+              <option value="gold" selected>Gold · $2,000</option>
+              <option value="platinum">Platinum · $2,800</option>
+              <option value="diamond">Diamond · $4,000</option>
+            </select>
+          </div>
+          <div><label for="focus">What you follow</label><input id="focus" name="focus" placeholder="Film, music, sport"></div>
+          <div><label for="note">Note</label><textarea id="note" name="note"></textarea></div>
+          <button class="btn" type="submit">Send request by email</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <footer><div class="wrap footer-row"><span>IconCard Hub International</span><span>No payment is taken on this page</span></div></footer>
+  <script src="js/main.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    if (params.get("tier")) document.getElementById("tier").value = params.get("tier");
+    document.getElementById("apply").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const body = ["Name: " + data.get("name"), "Email: " + data.get("email"), "City: " + data.get("city"), "Tier: " + data.get("tier"), "Focus: " + data.get("focus"), "", data.get("note")].join("\n");
+      location.href = "mailto:iconcardhubinternationalteam@gmail.com?subject=" + encodeURIComponent("IconCard request: " + data.get("tier")) + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
